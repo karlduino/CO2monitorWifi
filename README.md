@@ -14,6 +14,20 @@ and a micro-USB connector. It's a bit wider and longer than the
 Arduino Nano we were using before, but it should fit in the same
 space.
 
+### Libraries
+
+The code uses the following libraries to interact with the S8 sensor
+and the LCD display, respectively.
+
+- [S8_UART](https://www.arduino.cc/reference/en/libraries/s8_uart/)
+  [![github](https://kbroman.org/icons16/github-icon.png)](https://github.com/jcomas/S8_UART)
+
+- [LCD_I2C](https://www.arduino.cc/reference/en/libraries/lcd_i2c/)
+  [![github](https://kbroman.org/icons16/github-icon.png)](https://github.com/blackhack/LCD_I2C)
+
+- [EspSoftwareSerial](https://www.arduino.cc/reference/en/libraries/espsoftwareserial/)
+  [![github](https://kbroman.org/icons16/github-icon.png)](https://github.com/plerup/espsoftwareserial)
+
 ### Connections
 
 The 16x2 LCD with I2C has a 4-pin connector:
