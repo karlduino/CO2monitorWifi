@@ -2,7 +2,7 @@
 
 # box is 3 3/16 x 3 3/16 (inches)
 # lcd display screw holes are at 75mm x 31mm
-# arduino nano every screw holes are at 40.64mm x 15.24mm
+# ESP32 screw holes are at 1.8395" x 0.9205"
 # micro-usb port is 0.3165" wide, centered on nano every
 # senseair s8 opening is 0.68" wide x 0.54" wide
 
@@ -35,26 +35,26 @@ make_drill_template <- function(lmargin, tmargin) {
          cex=0.6, adj=c(1, 0.5))
 
 
-    # screws for arduino
-    arduino_width <- 4.064/2.54*1000
-    arduino_height <- 1.524/2.54*1000
+    # screws for esp32
+    esp32_width <- 1.8395*1000
+    esp32_height <- 0.9205*1000
     top <- bottom + 650
-    bottom <- top+arduino_height
-    right <- left+arduino_width
+    bottom <- top+esp32_height
+    right <- left+esp32_width
 
-    points(c(left, left, right), c(top, bottom, top), cex=0.4)
+    points(c(left, left, right), c(top, bottom, top), cex=0.6)
 
-    text(left+150, top, '1/16" drill bit\n11/32" 0/80 screw',
+    text(left+150, top, '7/64" drill bit\n5/8" 4/40 screw',
          cex=0.6, adj=c(0, 0.5))
 
     # where to cut for the usb-mini port
     usb_height <- 316.5
-    arduino_center <- top + arduino_height/2
-    arrows(rep(lmargin+200,2), arduino_center+c(-1,1)*usb_height/2,
-           rep(lmargin,2), arduino_center+c(-1,1)*usb_height/2, len=0.05)
-    segments(lmargin+200, arduino_center-usb_height/2,
-             lmargin+200, arduino_center+usb_height/2)
-    text(lmargin+260, arduino_center+usb_height/2-60,
+    esp32_center <- top + esp32_height/2
+    arrows(rep(lmargin+200,2), esp32_center+c(-1,1)*usb_height/2,
+           rep(lmargin,2), esp32_center+c(-1,1)*usb_height/2, len=0.05)
+    segments(lmargin+200, esp32_center-usb_height/2,
+             lmargin+200, esp32_center+usb_height/2)
+    text(lmargin+260, esp32_center+usb_height/2-60,
          "micro-USB port cut-out", cex=0.5, adj=c(0,0.5))
 
     # opening for senseair s8
