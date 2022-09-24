@@ -5,14 +5,16 @@ S8](https://senseair.com/products/size-counts/s8-lp/) sensor, an
 [ESP32 microcontroller](), and a
 16x2 LCD display.
 
-Here I'm revising the [initial version of the project]() to work with an ESP32 (specifically
+Here I'm revising the [initial version of the project](https://github.com/karlduino/CO2monitor) to work with an ESP32 (specifically
 ESP-WROOM-32), which is a low-cost microcontroller that includes wifi
-(and bluetooth). This will enable us to
+(and bluetooth). This will enable us to automatically log data
+(including time stamps) to a google spreadsheet
+using a google form.
 
-The version of ESP32 I bought has 30 pins and holes at the corners,
+The version of ESP32 I bought has 30 pins, holes at the corners for mounting,
 and a micro-USB connector. It's a bit wider and longer than the
-Arduino Nano we were using before, but it should fit in the same
-space.
+Arduino Nano we were using before, but it will fit in the same
+plastic box we have been using.
 
 ### Libraries
 
