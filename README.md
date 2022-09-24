@@ -26,8 +26,7 @@ for shipping, you can get it much cheaper
 - [SenseAir S8](https://senseair.com/products/size-counts/s8-lp/)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3AyzQMa)
 
-- [ESP32
-  microcontroller](https://www.etechnog.com/2021/12/esp32-pinout-diagram-.html)
+- ESP32 microcontroller
   (I'm using the ESP-WROOM-32 version with 30 pins and mounting holes at
   the four corners)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3C4zNcW)
