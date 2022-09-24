@@ -25,14 +25,17 @@ for shipping, you can get it much cheaper
 
 - [SenseAir S8](https://senseair.com/products/size-counts/s8-lp/)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3AyzQMa)
+  [![shopping cart icon](docs/pics/shopping-cart.png)](https://www.aliexpress.com/item/2255800698267376.html?spm=a2g0o.order_list.0.0.43ec1802aHp6qZ)
 
 - ESP32 microcontroller
   (I'm using the ESP-WROOM-32 version with 30 pins and mounting holes at
   the four corners)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3C4zNcW)
+  [![shopping cart icon](docs/pics/shopping-cart.png)](https://www.aliexpress.com/item/3256803345493016.html?spm=a2g0s.8937460.0.0.470d2e0emtzhO6)
 
 - 16x2 display with I2C chip
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3AwG3Z7)
+  [![shopping cart icon](docs/pics/shopping-cart.png)](https://www.aliexpress.com/item/3256803324642290.html?spm=a2g0o.order_list.0.0.43ec1802aHp6qZ)
 
 - clear plastic box
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3R24kxb)
