@@ -2,14 +2,14 @@
 
 #include <Arduino.h>
 #include <SoftwareSerial.h>
-#include "s8_uart.h"
+#include <s8_uart.h>
 #include <Wire.h>
 #include <LCD_I2C.h>
 #include <WiFi.h>
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
 #include <WiFiClientSecure.h>
-#include "esp_wpa2.h" //wpa2 library for connections to Enterprise networks
+#include <esp_wpa2.h>
 #include "private.h"
 
 #define STARTUP_DELAY_MS    8000
