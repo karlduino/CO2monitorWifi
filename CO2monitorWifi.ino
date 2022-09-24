@@ -257,8 +257,27 @@ void loop() {
   } // if update of measurement
 
   // post form data?
-  if(WiFi.status() == WL_CONNECTED && (last_post_time==0 || (millis() - last_post_time > MS_BETW_POSTS))) {
+  if(last_post_time==0 || (millis() - last_post_time > MS_BETW_POSTS)) {
       last_post_time = millis();
+
+      // if wifi disconnected, try to reconnect
+      if(WiFi.status() != WL_CONNECTED) {
+          #ifdef HOME
+          WiFi.begin(PRIVATE_SSID, PRIVATE_PASSWORD);
+          #else
+          // cert-file-free eduroam with PEAP (or TTLS)
+          WiFi.begin(ssid, WPA2_AUTH_PEAP, EAP_IDENTITY, EAP_USERNAME, EAP_PASSWORD);
+          #endif
+
+          int wifi_tries = 0;
+          while(WiFi.status() != WL_CONNECTED) {
+            delay(500);
+            wifi_tries++;
+            if(wifi_tries > MAX_WIFI_TRIES) {
+              break;
+            }
+          }
+      }
 
       // connect to client
       const int httpPort = 443;
