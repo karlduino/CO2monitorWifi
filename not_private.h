@@ -1,5 +1,8 @@
 // The code needs a private.h file with definitions of
 // wifi SSID and password information plus google form information
+//
+// This not_private.h file is not used but shows what the
+// private.h file should look like
 
 #define SERIAL_NUMBER "device_serial_number"
 
