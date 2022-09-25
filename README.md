@@ -12,7 +12,7 @@ ESP32, which is a low-cost microcontroller that includes wifi
 (including time stamps) to a google spreadsheet
 using a google form.
 
-The version of ESP32 I bought is I think called
+The version of ESP32 I bought is the
 [DOIT DevKit-v1](https://testzdoc.zerynth.com/reference/boards/doit_esp32/docs/).
 It has 30 pins, holes at the corners for mounting,
 and a micro-USB connector. It's a bit wider and longer than the

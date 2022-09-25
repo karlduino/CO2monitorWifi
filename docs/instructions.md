@@ -240,7 +240,7 @@ of work to set things up:
   Systems"
 
 - Finally you can select your board: click _Tools_ → _Board_ → _ESP32
-  Arduino_ and then _ESP32-WROOM-DA_. (Or maybe _ESP32 Dev Module_.)
+  Arduino_ and then _DOIT ESP32 DEVKIT V1_.
 
 You'll also need to install some libraries. Click _Tools_ → _Manage
 Libraries_. Then search for and install these libraries:
