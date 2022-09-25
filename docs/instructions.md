@@ -119,10 +119,11 @@ soldering isn't as sloppy as mine.)
 To mount the LCD display, I use two 1/2” 4/40 screws with round heads,
 with the heads outside the box, and two lock nuts.
 
-The particular ESP32 microcontroller is a 30-pin "ESP-WROOM-32" with a
-micro-USB connector and four big mounting holes.
+The particular ESP32 microcontroller is a 30-pin [DOIT
+DevKit-v1](https://testzdoc.zerynth.com/reference/boards/doit_esp32/docs/)
+with a micro-USB connector and four big mounting holes.
 
-![30-pin ESP-WROOM-32 microcontroller](https://karlduino.org/CO2monitorWifi/docs/pics/esp32.jpg)
+![30-pin ESP32 DOIT-DevKit-v1 microcontroller](https://karlduino.org/CO2monitorWifi/docs/pics/esp32.jpg)
 
 To mount the ESP32 in the box, I use three 5/8” 4/40 screws with round
 heads, and again with the heads outside the box, plus three 1/4"
@@ -239,7 +240,7 @@ of work to set things up:
   Systems"
 
 - Finally you can select your board: click _Tools_ → _Board_ → _ESP32
-  Arduino_ and then _ESP32-WROOM-DA_.
+  Arduino_ and then _ESP32-WROOM-DA_. (Or maybe _ESP32 Dev Module_.)
 
 You'll also need to install some libraries. Click _Tools_ → _Manage
 Libraries_. Then search for and install these libraries:

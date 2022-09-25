@@ -5,13 +5,16 @@ S8](https://senseair.com/products/size-counts/s8-lp/) sensor, an
 [ESP32 microcontroller](), and a
 16x2 LCD display.
 
-Here I'm revising the [initial version of the project](https://github.com/karlduino/CO2monitor) to work with an ESP32 (specifically
-ESP-WROOM-32), which is a low-cost microcontroller that includes wifi
+Here I'm revising the [initial version of the
+project](https://github.com/karlduino/CO2monitor) to work with an
+ESP32, which is a low-cost microcontroller that includes wifi
 (and bluetooth). This will enable us to automatically log data
 (including time stamps) to a google spreadsheet
 using a google form.
 
-The version of ESP32 I bought has 30 pins, holes at the corners for mounting,
+The version of ESP32 I bought is I think called
+[DOIT DevKit-v1](https://testzdoc.zerynth.com/reference/boards/doit_esp32/docs/).
+It has 30 pins, holes at the corners for mounting,
 and a micro-USB connector. It's a bit wider and longer than the
 Arduino Nano we were using before, but it will fit in the same
 plastic box we have been using.
@@ -28,7 +31,7 @@ for shipping, you can get it much cheaper
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://www.aliexpress.com/item/2255800698267376.html?spm=a2g0o.order_list.0.0.43ec1802aHp6qZ)
 
 - ESP32 microcontroller
-  (30-pin ESP-WROOM-32 version with mounting holes)
+  (30-pin [DOIT DevKit v1](https://testzdoc.zerynth.com/reference/boards/doit_esp32/docs/) with mounting holes)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://amzn.to/3C4zNcW)
   [![shopping cart icon](docs/pics/shopping-cart.png)](https://www.aliexpress.com/item/3256803345493016.html?spm=a2g0s.8937460.0.0.470d2e0emtzhO6)
 
