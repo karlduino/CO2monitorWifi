@@ -119,7 +119,12 @@ soldering isn't as sloppy as mine.)
 To mount the LCD display, I use two 1/2” 4/40 screws with round heads,
 with the heads outside the box, and two lock nuts.
 
-To mount the microcontroller, I use three 5/8” 4/40 screws with round
+The particular ESP32 microcontroller is a 30-pin "ESP-WROOM-32" with a
+micro-USB connector and four big mounting holes.
+
+![30-pin ESP-WROOM-32 microcontroller](https://karlduino.org/CO2monitorWifi/docs/pics/esp32.jpg)
+
+To mount the ESP32 in the box, I use three 5/8” 4/40 screws with round
 heads, and again with the heads outside the box, plus three 1/4"
 plastic stand-offs, and three lock nuts. The stand-offs gets things
 above where the pins are, and also should help prevent any
@@ -127,6 +132,9 @@ short-circuits from the metal screws.
 
 I get these small screws and nuts
 [McMaster-Carr](https://mcmaster.com).
+
+![Plastic box with LCD display and ESP32 installed](https://karlduino.org/CO2monitorWifi/docs/pics/09_components_installed.jpg)
+
 
 ### Make connections
 
@@ -149,7 +157,7 @@ The 16x2 LCD with I2C has a 4-pin connector:
 
   - 16x2 SCL → ESP32 D22 (yellow)
 
-![Connections between LCD display and ESP32]()
+![Connections between LCD display and ESP32](https://karlduino.org/CO2monitorWifi/docs/pics/10_lcd_connections.jpg)
 
 **TO DO** picture of LCD display connected to ESP32
 
@@ -163,7 +171,7 @@ The SenseAir S8 connections are the following:
 
 - 5-pin side, pin 3 (UART TX) → ESP32 D13 (yellow)
 
-![Connections between SenseAir S8 and ESP32]()
+![Connections between ESP32 and both the LCD display and sensor](https://karlduino.org/CO2monitorWifi/docs/pics/11_all_connections.jpg)
 
 **TO DO** picture of sensor connected to ESP32
 
@@ -247,7 +255,7 @@ baseline to 400 ppm. (If you connect the pin to ground for more than 8
 seconds, it will reset the baseline to 0 ppm, which you definitely
 don't want.)
 
-![Wires for calibration: three solid wires soldered together plus a female-to-female jumper](https://karlduino.org/CO2monitorWifi/docs/pics/11_wires_for_calibration.jpg)
+![Wires for calibration: three solid wires soldered together plus a female-to-female jumper](https://karlduino.org/CO2monitorWifi/docs/pics/12_wires_for_calibration.jpg)
 
 So, following the [instructions from
 Mariete](https://emariete.com/en/meter-co2-esp8266-nodemcu-sensor-senseair-s8/#Calibracion_del_sensor_de_CO2_Senseair_S8_LP):
