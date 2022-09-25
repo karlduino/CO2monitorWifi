@@ -67,6 +67,11 @@ library](https://github.com/johnrickman/LiquidCrystal_I2C), though I
 ended up using the [LCD_I2C
 library](https://www.arduino.cc/reference/en/libraries/lcd_i2c/).
 
+The ESP32 has a built-in LED, connected to pin 2. I'm not trying to
+control it in the code, but it seems to indicate the wifi connection:
+it flashes at high frequency when connected to wifi, but is solid on
+when not connected to wifi.
+
 
 
 ### Libraries
