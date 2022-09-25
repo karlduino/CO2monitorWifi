@@ -56,7 +56,8 @@ You'll find the code on [Github](https://github.com/karlduino/CO2monitorWifi).
 
 There is a required `private.h` file that defines the wifi SSID and
 password, a google form identifier, and the cryptic field names for
-the google form. If `HOME` is defined (for example, with `#define HOME true`),
+the google form. The file `not_private.h` (which is not used) provides
+examples: If `HOME` is defined (for example, with `#define HOME true`),
 standard wifi WPA2 is used and we need `PRIVATE_SSID` and
 `PRIVATE_PASSWORD`. Otherwise, enterprise WPA2 is used (for me,
 [eduroam](https://eduroam.org) at my university) and `EAP_USERNAME`

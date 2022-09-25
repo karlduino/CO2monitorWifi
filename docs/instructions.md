@@ -261,7 +261,8 @@ immediately start running.
 
 Note that you'll need to create the required `private.h` file that
 defines the wifi SSID and password, a google form identifier, and the
-cryptic field names for the google form. If `HOME` is defined (for
+cryptic field names for the google form. The file `not_private.h` (which is not used) provides
+examples: If `HOME` is defined (for
 example, with `#define HOME true`), standard wifi WPA2 is used and we
 need `PRIVATE_SSID` and `PRIVATE_PASSWORD`. Otherwise, enterprise WPA2
 is used (for me, [eduroam](https://eduroam.org) at my university) and
