@@ -159,8 +159,6 @@ The 16x2 LCD with I2C has a 4-pin connector:
 
 ![Connections between LCD display and ESP32](https://karlduino.org/CO2monitorWifi/docs/pics/10_lcd_connections.jpg)
 
-**TO DO** picture of LCD display connected to ESP32
-
 The SenseAir S8 connections are the following:
 
 - 4-pin side, pin 1 (G+) → red patch wire → ESP32 VIN (red)
@@ -172,8 +170,6 @@ The SenseAir S8 connections are the following:
 - 5-pin side, pin 3 (UART TX) → ESP32 D13 (yellow)
 
 ![Connections between ESP32 and both the LCD display and sensor](https://karlduino.org/CO2monitorWifi/docs/pics/11_all_connections.jpg)
-
-**TO DO** picture of sensor connected to ESP32
 
 ### Load the software
 
