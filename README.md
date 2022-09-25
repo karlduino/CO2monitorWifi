@@ -54,8 +54,19 @@ from [McMaster-Carr](https://mcmaster.com).
 
 You'll find the code on [Github](https://github.com/karlduino/CO2monitorWifi).
 
+There is a required `private.h` file that defines the wifi SSID and
+password, a google form identifier, and the cryptic field names for
+the google form. If `HOME` is defined (for example, with `#define HOME true`),
+standard wifi WPA2 is used and we need `PRIVATE_SSID` and
+`PRIVATE_PASSWORD`. Otherwise, enterprise WPA2 is used (for me,
+[eduroam](https://eduroam.org) at my university) and `EAP_USERNAME`
+and `EAP_PASSWORD` are needed. For the google form, we need
+`PRIVATE_API_CALL` and five field identifiers like `PRIVATE_ENTRY1`.
+
 The first time using the ESP32 with the Arduino
-IDE, you will need to install Board Manager and drivers for these boards.
+IDE, you will need to install Board Manager and drivers for these
+boards. Details are in the [assembly
+instructions](https://karlduino.org/CO2monitor/docs/instructions.html#load-the-software).
 
 My code for interacting with the SenseAir S8 sensor is based on the
 example code in the [S8_UART
@@ -72,6 +83,17 @@ control it in the code, but it seems to indicate the wifi connection:
 it flashes at high frequency when connected to wifi, but is solid on
 when not connected to wifi.
 
+
+### Google form
+
+The connection to wifi with the ESP32 is in order to dump the data to
+a google spreadsheet on the web. This is done through a google form.
+For more discussion of the process, see [this blog
+post](https://karlduino.org/2022/09/23/wifi-eduroam-google-forms/).
+You need to create a form and grab the form identifier plus the
+cryptic field identifiers that google creates. The details are
+in the [assembly
+instructions](https://karlduino.org/CO2monitor/docs/instructions.html#google-form).
 
 
 ### Libraries

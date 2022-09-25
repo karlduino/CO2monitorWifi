@@ -171,6 +171,49 @@ The SenseAir S8 connections are the following:
 
 ![Connections between ESP32 and both the LCD display and sensor](https://karlduino.org/CO2monitorWifi/docs/pics/11_all_connections.jpg)
 
+
+### Google form
+
+The connection to wifi with the ESP32 is in order to dump the data to
+a google spreadsheet on the web. This is done through a google form.
+For more discussion of the process, see [this blog
+post](https://karlduino.org/2022/09/23/wifi-eduroam-google-forms/).
+You need to create a form and grab the form identifier plus the
+cryptic field identifiers that google creates.
+
+- Go to <https://forms.google.com> and start a new blank form.
+
+- Give it a name, create a first question (as the variable name you
+  want in the column in the final spreadsheet), select _Short answer_
+  in the drop-down menu, and then click the plus sign in the circle on
+  the far right to create another field, or click the _Send_ button on
+  the top-right when you're done.
+
+- At the end, grab the full link to the form, which includes (after
+  `forms/d/e`) the super-long form ID that you'll need.
+
+- Open the form in Firefox and click Ctrl-Shift-I to open the
+  "Inspector". Then poke through the html to find the `<form>` element.
+  If you poke around inside there, you'll find the `<input>` elements.
+  You're looking for their names, as they have the field names that
+  google uses, and which you will use when you want to post data
+  programmatically. They'll look something like this:
+
+  ```
+  <input type="hidden" name="entry.1240506587" value="">
+  <input type="hidden" name="entry.1745392992" value="">
+  ```
+
+  Those `entry.###` names are used in the API call to push data to the
+  google spreadsheet.
+
+- Go to your form at <https://forms.google.com> and you'll find three
+  tabs: Questions, Responses, and Settings. If you click Responses,
+  there's a little green box with a white cross in it; click that to
+  create a spreadsheet to collect your results.
+
+
+
 ### Load the software
 
 Download and install the [Arduino
@@ -215,6 +258,17 @@ Download the software for this project,
 [`CO2monitorWifi.ino`](https://raw.githubusercontent.com/karlduino/CO2monitorWifi/main/CO2monitorWifi.ino)
 and open it in the Arduino IDE. Upload it to your board, and it'll
 immediately start running.
+
+Note that you'll need to create the required `private.h` file that
+defines the wifi SSID and password, a google form identifier, and the
+cryptic field names for the google form. If `HOME` is defined (for
+example, with `#define HOME true`), standard wifi WPA2 is used and we
+need `PRIVATE_SSID` and `PRIVATE_PASSWORD`. Otherwise, enterprise WPA2
+is used (for me, [eduroam](https://eduroam.org) at my university) and
+`EAP_USERNAME` and `EAP_PASSWORD` are needed. For the google form, we
+need `PRIVATE_API_CALL` and five field identifiers like
+`PRIVATE_ENTRY1`.
+
 
 
 ### Adjust the LCD contrast
