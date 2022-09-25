@@ -173,20 +173,41 @@ The SenseAir S8 connections are the following:
 
 ### Load the software
 
-Download and install the [ESP32
+Download and install the [Arduino
 IDE](https://www.arduino.cc/en/software).
 
 Open the IDE, and then use a micro-USB cable to connect your ESP32
 to your computer.
 
-Then select your board: On the menu bar, click Tools, and then
+The first time you use one of the ESP32 microcontrollers, it's a bit
+of work to set things up:
 
-**TO DO** need to explain how to download the board manager
-(looking for ESP32-WROOM-D2)
+- In the Arduino IDE, Click _File_ → _Preferences_
 
-**TO DO** also explain the libraries you need to get
+- In the _Additional Boards Manager URLs_ field, add:
 
-Under Port (farther down in the Tools menu), you need to select the
+  ```
+  https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
+  ```
+
+- Then go to _Tools_ → _Board_ → _Boards Manager_
+
+- Search for "ESP32" and click _Install_ on "ESP32 by Espressif
+  Systems"
+
+- Finally you can select your board: click _Tools_ → _Board_ → _ESP32
+  Arduino_ and then _ESP32-WROOM-DA_.
+
+You'll also need to install some libraries. Click _Tools_ → _Manage
+Libraries_. Then search for and install these libraries:
+
+- [S8_UART](https://www.arduino.cc/reference/en/libraries/s8_uart/)
+
+- [LCD_I2C](https://www.arduino.cc/reference/en/libraries/lcd_i2c/)
+
+- [EspSoftwareSerial](https://www.arduino.cc/reference/en/libraries/espsoftwareserial/)
+
+Finally, under _Port_ (farther down in the Tools menu), you need to select the
 USB port for your board. Hopefully you'll see just one choice. If you
 have trouble, try using a different micro-USB cable.
 
