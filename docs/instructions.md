@@ -110,7 +110,7 @@ microcontroller. I cover the soldered joint with a bit of heat-shrink
 tubing. (I used 3/32" tubing. You could maybe get by with 1/16" if your
 soldering isn't as sloppy as mine.)
 
-![3 22-gauge red wires soldered together, with the soldering joint covered with black heat-shrink tubing](https://karlduino.org/CO2monitorWifi/docs/pics/08_soldered_wires.jpg)
+![3 22-gauge red wires soldered together, with the soldering joint covered with black heat-shrink tubing](https://karlduino.org/CO2monitorWifi/docs/pics/08_soldered_wire.jpg)
 
 
 
