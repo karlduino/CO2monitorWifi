@@ -12,6 +12,8 @@ ESP32, which is a low-cost microcontroller that includes wifi
 (including time stamps) to a google spreadsheet
 using a google form.
 
+![Looping video of six CO2 monitors with blinking blue lights, automatically posting data to a google spreadsheet](https://karlduino.org/images/wifi_co2_monitors.gif)
+
 The version of ESP32 I bought is the
 [DOIT DevKit-v1](https://testzdoc.zerynth.com/reference/boards/doit_esp32/docs/).
 It has 30 pins, holes at the corners for mounting,
