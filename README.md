@@ -5,10 +5,12 @@ S8](https://senseair.com/products/size-counts/s8-lp/) sensor, an
 [ESP32 microcontroller](), and a
 16x2 LCD display.
 
-Here I'm revising the [initial version of the
-project](https://github.com/karlduino/CO2monitor) to work with an
-ESP32, which is a low-cost microcontroller that includes wifi
-(and bluetooth). This will enable us to automatically log data
+The [initial version of the
+project](https://github.com/karlduino/CO2monitor) used an
+[Arduino Nano Every
+board](https://store.arduino.cc/products/arduino-nano-every?queryID=undefined).
+Here, we've switched to an ESP32, which includes wifi
+(and bluetooth) but is actually less expensive. Wifi access will enable us to automatically log data
 (including time stamps) to a google spreadsheet
 using a google form.
 
@@ -23,7 +25,7 @@ plastic box we have been using.
 
 ### Parts
 
-The cost of the main components is about US$ 60. (Most of the cost is
+The cost of the main components is about US$ 50. (Most of the cost is
 the sensor, which is about US$ 40. If you're willing to wait a month
 for shipping, you can get it much cheaper
 [via AliExpress](https://s.click.aliexpress.com/e/_9GsnY9)).
